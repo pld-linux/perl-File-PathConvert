@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	PathConvert
+%define		pdir	File
+%define		pnam	PathConvert
 Summary:	File::PathConvert - convert absolute/relative and logical/physical paths
 Summary(pl):	File::PathConvert - konwersja (bez-)wzglêdnych i logicznych/fizycznych ¶cie¿ek
 Name:		perl-File-PathConvert
