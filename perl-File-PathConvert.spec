@@ -1,12 +1,17 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	PathConvert
-Summary:	File::PathConvert perl module
-Summary(pl):	Modu³ perla File::PathConvert
+Summary:	File::PathConvert - convert absolute/relative and logical/physical paths
+#Summary(pl):	
 Name:		perl-File-PathConvert
 Version:	0.9
-Release:	2
-License:	GPL
+Release:	3
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	64e731d1165a0bd5e8f3de93775d7795
@@ -17,12 +22,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File::PathConvert provides functions to convert between a variety of
-paths.
+File::PathConvert provides functions to convert between absolute and
+relative paths, and from logical paths to physical paths on a variety
+of filesystems, including the URL 'filesystem'.
 
-%description -l pl
-File::PathConvert udostêpnia funkcje konwersji pomiêdzy ró¿nymi
-scie¿kami.
+#%description -l pl
+#TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -32,6 +37,8 @@ scie¿kami.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
