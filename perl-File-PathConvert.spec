@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	PathConvert
-%include	/usr/lib/rpm/macros.perl
 Summary:	File-PathConvert perl module
 Summary(pl):	Modu³ perla File-PathConvert
 Name:		perl-File-PathConvert
 Version:	0.85
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ File-PathConvert udostêpnia funkcje konwersji pomiêdzy ró¿nymi
 scie¿kami.
 
 %prep
-%setup -q -n File-PathConvert-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p0
 
 %build
