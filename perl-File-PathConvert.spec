@@ -4,11 +4,11 @@ Summary(pl):	Modu³ perla File-PathConvert
 Name:		perl-File-PathConvert
 Version:	0.85
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-PathConvert-%{version}.tar.gz
-Patch:		perl-File-PathConvert-paths.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-PathConvert-%{version}.tar.gz
+Patch0:		perl-File-PathConvert-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -16,10 +16,12 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-PathConvert provides functions to convert between a variety of paths.
+File-PathConvert provides functions to convert between a variety of
+paths.
 
 %description -l pl
-File-PathConvert udostêpnia funkcje konwersji pomiêdzy ró¿nymi scie¿kami.
+File-PathConvert udostêpnia funkcje konwersji pomiêdzy ró¿nymi
+scie¿kami.
 
 %prep
 %setup -q -n File-PathConvert-%{version}
