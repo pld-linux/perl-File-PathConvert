@@ -4,8 +4,8 @@
 Summary:	File::PathConvert perl module
 Summary(pl):	Modu³ perla File::PathConvert
 Name:		perl-File-PathConvert
-Version:	0.85
-Release:	8
+Version:	0.9
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
