@@ -26,6 +26,8 @@ File::PathConvert provides functions to convert between absolute and
 relative paths, and from logical paths to physical paths on a variety
 of filesystems, including the URL 'filesystem'.
 
+*** THIS MODULE (File::PathConvert) IS DEPRECATED. ***
+
 #%description -l pl
 #TODO
 
