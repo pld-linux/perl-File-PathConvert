@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	PathConvert
-Summary:	File-PathConvert perl module
-Summary(pl):	Modu³ perla File-PathConvert
+Summary:	File::PathConvert perl module
+Summary(pl):	Modu³ perla File::PathConvert
 Name:		perl-File-PathConvert
 Version:	0.85
 Release:	8
@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-PathConvert provides functions to convert between a variety of
+File::PathConvert provides functions to convert between a variety of
 paths.
 
 %description -l pl
-File-PathConvert udostêpnia funkcje konwersji pomiêdzy ró¿nymi
+File::PathConvert udostêpnia funkcje konwersji pomiêdzy ró¿nymi
 scie¿kami.
 
 %prep
