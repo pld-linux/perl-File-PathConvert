@@ -9,7 +9,7 @@ Summary:	File::PathConvert - convert absolute/relative and logical/physical path
 Summary(pl):	File::PathConvert - konwersja (bez-)wzglêdnych i logicznych/fizycznych ¶cie¿ek
 Name:		perl-File-PathConvert
 Version:	0.9
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
