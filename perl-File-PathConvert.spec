@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	PathConvert
 Summary:	File::PathConvert - convert absolute/relative and logical/physical paths
-Summary(pl):	File::PathConvert - konwersja (bez-)wzglêdnych i logicznych/fizycznych ¶cie¿ek
+Summary(pl.UTF-8):   File::PathConvert - konwersja (bez-)wzglÄ™dnych i logicznych/fizycznych Å›cieÅ¼ek
 Name:		perl-File-PathConvert
 Version:	0.9
 Release:	4
@@ -28,12 +28,12 @@ of filesystems, including the URL 'filesystem'.
 
 *** THIS MODULE (File::PathConvert) IS DEPRECATED. ***
 
-%description -l pl
-File::PathConvert udostêpnia funkcje do konwersji miêdzy ¶cie¿kami
-bezwzglêdnymi i wzglêdnymi oraz z logicznych na fizyczne dla wielu
-systemów plików, w³±cznie z "systemem plików" URL.
+%description -l pl.UTF-8
+File::PathConvert udostÄ™pnia funkcje do konwersji miÄ™dzy Å›cieÅ¼kami
+bezwzglÄ™dnymi i wzglÄ™dnymi oraz z logicznych na fizyczne dla wielu
+systemÃ³w plikÃ³w, wÅ‚Ä…cznie z "systemem plikÃ³w" URL.
 
-** TEN MODU£ (File::PathConvert) JEST ZARZUCONY. ***
+** TEN MODUÅ (File::PathConvert) JEST ZARZUCONY. ***
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
