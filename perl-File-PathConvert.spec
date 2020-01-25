@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	PathConvert
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::PathConvert - convert absolute/relative and logical/physical paths
 Summary(pl.UTF-8):	File::PathConvert - konwersja (bez-)względnych i logicznych/fizycznych ścieżek
 Name:		perl-File-PathConvert
